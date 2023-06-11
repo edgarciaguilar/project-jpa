@@ -8,6 +8,8 @@
     	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     	<!-- Define las clases que seran mapeadas al configurarse la conexion a la BD -->
     	<class>com.jpa.project_jpa.entity.Disquera</class>
+    	<class>com.jpa.project_jpa.entity.Genero</class>
+    	<class>com.jpa.project_jpa.entity.SubGenero</class>
     	
     	<properties>
     		<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

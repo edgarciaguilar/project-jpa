@@ -58,5 +58,19 @@ class DisqueraDAOImplTest {
 		
 		//fail("Not yet implemented");
 	}
+	
+	@Test
+	void testConsultarByDescripcionJPQL() {
+		Disquera disqueraConsultada = this.disqueraDAO.consultarByDescripcionJPQL("Iron");
+		System.out.println("Disquera: " + disqueraConsultada.getDescripcion());
+		assertNotNull(disqueraConsultada);
+	}
+	
+	@Test
+	void testConsultarDescripcionNativeSQL() {
+		Disquera disqueraConsultada = this.disqueraDAO.consultarByDescripcionNative("Iron");
+		System.out.println("Disquera: " + disqueraConsultada.getDescripcion());
+		assertNotNull(disqueraConsultada);
+	}
 
 }
